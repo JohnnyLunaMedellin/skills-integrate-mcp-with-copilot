@@ -22,8 +22,21 @@
       </section>
 
       <section id="signup-container">
-        <h3>Sign Up for an Activity</h3>
-        <form id="signup-form">
+        <h3 id="signup-title">Staff Sign In</h3>
+        <p id="auth-status">Staff sign-in is required to manage student registrations.</p>
+        <form id="login-form">
+          <div class="form-group">
+            <label for="username">Staff username:</label>
+            <input type="text" id="username" required autocomplete="username" />
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" required autocomplete="current-password" />
+          </div>
+          <button type="submit">Staff Sign In</button>
+        </form>
+        <button id="logout-button" class="hidden" type="button">Sign Out</button>
+        <form id="signup-form" class="hidden">
           <div class="form-group">
             <label for="email">Student Email:</label>
             <input type="email" id="email" required placeholder="your-email@mergington.edu" />
